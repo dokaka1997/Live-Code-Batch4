@@ -1,0 +1,179 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09-Aug-2021, 17:36:57
+    Author     : admin
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #fff !important;
+    text-align: center !important;
+}
+
+h2{
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 600;
+}
+
+.search-group{
+    padding: 10px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.search-group > label{
+    display: inline-block;
+    font-weight: bold;
+    width: 70px;
+    text-align: left;
+}
+.search-group > input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.btn-success{
+    color: #fff;
+    background-color: #198754;
+    border: none;
+    padding: 10px 12px !important;
+    transition: background-color 0.3s;
+}
+
+.rounded-50{
+    border-radius: 50px !important;
+}
+.btn-success:hover{
+    background-color: #27b372;
+}
+table { 
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+thead > tr{
+    color: #fff;
+    background-color: #198754;
+}
+
+thead > tr > th:nth-child(1){
+    width: 18%;
+}
+
+thead > tr > th:nth-child(2){
+    width: 25%;
+}
+
+thead > tr > th:nth-child(3){
+    width: 7%;
+}
+
+thead > tr > th:nth-child(4){
+    text-align: center;
+    width: 27%;
+}
+
+tr{
+    border: 1px solid #dddddd;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+td{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+tbody > tr > td:nth-child(4){
+    text-align: center;
+}
+
+.btn-primary{
+    border: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0D6EFD; 
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover{
+    background-color: #1B9CEA;
+}
+.pagination {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.pagination > a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+#pagination-index{
+    border-radius: 50%;
+    background-color: #198754;
+    color: #fff;
+    text-align: center;
+    padding: 12px 15px;
+}
+
+#my-detail{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: fade-in 0.3s;
+}
+#my-detail h3, #my-detail h5{
+    text-align: left;
+}
+
+.overlay{
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.mybox{
+    max-height: 300px;
+    overflow: auto;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
